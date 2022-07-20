@@ -1,0 +1,91 @@
+#allProducts{
+    width: 60vw;
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.data{
+    width: 100%;
+}
+.data>p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.data>img{
+    width: 100%;
+}
+.data>div{
+    display: flex;
+    gap: 5px;
+}
+.data>div>p:nth-child(1){
+    text-decoration: line-through;
+    font-size: 12.33px;
+}
+.data>div>p:nth-child(2){
+    color: red;
+    font-size: 12.33px;
+}
+.cart{
+    background-color: gray;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.data:hover{
+    cursor: pointer;
+}
+#rating{
+    width: 40%;
+}
+
+#foot{
+    border-top: 1px solid #50504b;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(88, 87, 87);
+}
+#foot>div>h2{
+    font-weight: 600;
+}
+#foot>div>p>a{
+    text-decoration: none;
+    color: rgb(88, 87, 87);
+}
+#socials{
+    width: 180px;
+}
+#form>input{
+border: none;
+border-bottom: 2px solid 
+#50504b;
+}
+#form>button{
+    background-color: 
+    #50504b;
+    border: none;
+    height: 40px;
+    color: white;
+}
+#download{
+    background-color: 
+    #9d88ce;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 75%;
+}
+#foot>div{
+    line-height: 40px;
+}
+button:hover{
+    cursor: pointer;
+}

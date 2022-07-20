@@ -1,0 +1,119 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    margin: 0px;
+}
+#banner{
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    background-color:#50504b ;
+    color: #ffffff;
+    line-height: 10px;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px;
+    z-index: 5;
+    top: 0px;
+}
+#navbar{
+    width: 100vw;
+    display: flex;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    position: fixed;
+    top: 35px;
+    background-color: #ffffff;
+    margin: 0px;
+    z-index: 5;
+    margin-bottom: 100px;
+    border-radius: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#dotMenu{
+    width: 20%;
+}
+#dotMenu>img{
+    width: 30px;
+}
+#search{
+    background: none;
+    margin: 0px;
+    height: 30px;
+    border: none;
+    border-right: none;
+}
+#search>img{
+    width: 20px;
+    height: 20px;
+}
+#search+input{
+    height: 30px;
+    margin: 0px;
+    border: none;
+    border-left: none;
+}
+#searchIcons{
+    display: flex;
+    align-items: center;
+   border: 1px solid black;
+   border-radius: 3px;
+}
+#cartIcon {
+    position: relative;
+}
+#cartIcon>img{
+   width: 40px;
+   height: 30px;
+   background: none;
+}
+#navIcons{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+#profile>img{
+    width: 30px;
+}
+#carouselDiv{
+    margin-top: 154px;
+    width: 100%;
+    height: 55vh;
+    z-index: 0;
+    position:relative;
+}
+#carouselDiv:hover{
+    cursor: pointer;
+}
+#carouselDiv>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+#carouselDiv>button{
+    position: absolute;
+    height: 100%;
+    background: none;
+    border: none;
+    width: 40px;
+    font-size: 40px;
+}
+#carouselDiv>button:nth-child(2){
+    left: 20px;
+}
+#carouselDiv>button:nth-child(3){
+    right: 20px;
+}
+#carouselDiv>button:hover{
+    color: white;
+}
+H1{
+    text-align: center;
+    font-weight: 500;
+    color: #50504b;
+    font-size: 60px;
+}
