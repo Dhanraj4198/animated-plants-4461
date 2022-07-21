@@ -3,7 +3,6 @@ let imgLink = [
    "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/green_desk_50d0a315-fd1c-45c7-92bf-a7c45753d5b9.jpg?v=1655953516"
     
 ]
-console.log(imgLink)
 let leftBtn = document.getElementById('left')
 let rightBtn = document.getElementById('right')
 let carousel = document.getElementById('carousel')
@@ -14,7 +13,6 @@ rightBtn.addEventListener('click',function(){
     if(imageState==imgLink.length){
         imageState=0
     }
-    console.log(imgLink)
     carousel.src = imgLink[imageState]
 })
 leftBtn.addEventListener('click',function(){
