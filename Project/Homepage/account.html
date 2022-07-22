@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account – Dot&Key</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div id="banner">
+        <p class="line">3 D&K BESTSELLER FREE ON ORDERS 999+</p>
+    </div>
+    
+    <div id="navbar">
+        <div id="dotMenu"><img src="https://cdn.iconscout.com/icon/free/png-128/menu-1850142-1568969.png" alt=""></div>
+        <div id="brandLogo"><a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" alt=""></a></div>
+       
+       <div id="navIcons">
+        <div id="searchIcons">
+            <button id="search"><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt=""></button>
+            <input type="search" placeholder="Search">
+        </div>
+            <div><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="">
+            </div>
+            <div id="cartIcon" >
+               <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div id="profile"><img src="https://cdn-icons-png.flaticon.com/512/1250/1250689.png" alt=""></div>
+        </div>
+    </div>
+<div id="logout">
+    <h2>My Account</h2>
+    <p id="logoutBtn">Log out</p>
+</div>
+<div id="details">
+<div>
+    <h2>Order History</h2>
+    <p>You haven't placed any orders yet.</p>
+</div>
+<div>
+    <h2>Account details</h2>
+    <p class="memberName">Dhanraj Jagtap</p>
+    <p class="memberName">Dhanraj Jagtap</p>
+    <p>View adresses (1)</p>
+</div>
+</div>
+    <div  id="cart">
+        <div id="cartHead">
+             <h1><span>Bag</span>    <span id="quantity">(5)</span></h1>
+            <button id="closeCart">&times;</button>
+        </div>
+        <div id="cartPage">
+
+        </div>
+        <div id="cartTotal">
+            <div id="pricing">
+                <h1>SUBTOTAL</h1>
+                <P>Rs: 123.00</P>
+            </div>
+            <p>FREE SHIPPING OVER Rs.499/-</p>
+            <P>COD NOT APPLICABLE BELOW Rs.499</P>
+            <button>CHECKOUT</button>
+            <p>100% Purchase Protection</p>
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_2_71095016-e5c2-48f5-a50f-fbf011232ef2.png?v=1655301396" alt="">
+        </div>
+    </div>
+    <div  id="overlay"></div>
+    <button id="reward">REWARDS</button>
+    <footer>
+        <div id="foot">
+         <div>
+             <h2>GET TO KNOW US</h2>
+             <P>ABOUT US</P>
+             <P>CONTACT US</P>
+             <P>EARTHCARE</P>
+             <P>AFFILIATE PROGRAM</P>
+             <P>TERMS & CONDITION</P>
+             <P>REFUND & CANCELLATION</P>
+             <P>PRIVACY POLICY</P>
+             <P>ORDER & SHIPPING</P>
+             <p>PAYMENT TERMS</p>
+             <P>TERMS OF SERVICE</P>
+             <P>REFUND POLICY</P>
+         </div>
+         <div>
+             <H2>ALSO AVAILABLE ON</H2>
+             <P> <a href="https://www.nykaa.com/brands/dot-key/c/7675?root=search,brand_menu,brand_list,Dot%20&%20Key&sourcepage=home&rtqu=Dot%20%26%20Key">NYKAA</a></P>
+             <P><a href="https://www.amazon.in/stores/node/19401367031?_encoding=UTF8&field-lbr_brands_browse-bin=Dot%20%26%20Key&ref_=bl_dp_s_web_19401367031">AMAZON</a></P>
+             <P><a href="https://www.flipkart.com/search?q=dot%20and%20key&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">FLIPKART</a></P>
+             <P><a href="https://www.myntra.com/dot-and-key?src=bc">MYNTRA</a></P>
+         </div>
+         <div>
+             <h2>STAY UPDATED</h2>
+             <div id="form">
+                 <input type="email" name="mail" id="mail">
+                 <button>SUBMIT</button>
+             </div>
+             <button id="download">DOWNLOAD THE APP</button>
+             <H2>FOLLOW US</H2>
+             <img src="https://t4.ftcdn.net/jpg/02/85/44/69/360_F_285446949_eVkqwuNjPXLwR72oq0ctYltBCIflCbwh.webp" alt="" id="socials">
+         </div>
+        </div>
+     </footer>
+</body>
+</html>
+
+<script src="index.js" ></script>
+<script src="homepage.js" ></script>
+<script src="cart.js"></script>
+<script src="login.js"></script>
+<script>
+    let falg1 = JSON.parse(localStorage.getItem('flag'))
+document.querySelector('#logoutBtn').addEventListener('click',logoutFunc)
+function logoutFunc(){
+    localStorage.setItem('flag',false)
+    window.location.href = 'login.html'
+}
+let user = JSON.parse(localStorage.getItem('loggedPerson'))
+console.log(user)
+</script>

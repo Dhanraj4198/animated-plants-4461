@@ -1,0 +1,20 @@
+#logout{
+    margin-top: 10%;
+    text-align: center;
+}
+#logout>p{
+    text-decoration: underline;
+}
+#logout>p:hover{
+    cursor: pointer;
+}
+#details{
+    display: flex;
+    justify-content: space-around;   
+}
+#details>div{
+    text-align: left;
+}
+#details>div>h2{
+    text-align: left;
+}

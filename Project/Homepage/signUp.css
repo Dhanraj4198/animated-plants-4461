@@ -1,0 +1,56 @@
+#signupForm{
+    width: 20%;
+    margin: auto;
+    margin-top: 10%;
+    display: grid;
+}
+h2{
+    text-align: center;
+    color: #50504b;
+
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px
+}
+input{
+    height: 50px;
+    margin-bottom: 20px;
+}
+label{
+    font-weight: 600;
+    color: #50504b;
+}
+button{
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 17px;
+}
+#submitBtn{
+    border: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+    background-color: 
+    #50504b;
+}
+#submitBtn:hover{
+    cursor: pointer;
+}
+#fb{
+    background-color: #4267b2;
+    color: white;
+}
+#google{
+    background-color: #dd4c39;
+    color: white;
+}
+
+#fb:hover{
+    background-color: #4267b2cd;
+}
+#google:hover{
+    background-color: #dd4c39dd;
+}
