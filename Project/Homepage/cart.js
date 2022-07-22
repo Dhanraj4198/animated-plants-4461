@@ -54,7 +54,6 @@ let openCartButton = document.querySelector('#cartIcon')
 let closeCartButton = document.querySelector('#closeCart')
 openCartButton.addEventListener('click',openCartPage)
 function openCartPage(){
-    console.log(event);
 document.querySelector('#cart').setAttribute('class','active')
 document.querySelector('#overlay').setAttribute('class','active')
 }

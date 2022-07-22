@@ -6,7 +6,6 @@ let imgLink = [
 let leftBtn = document.getElementById('left')
 let rightBtn = document.getElementById('right')
 let carousel = document.getElementById('carousel')
-
 let imageState = 0
 rightBtn.addEventListener('click',function(){
     imageState++
@@ -22,3 +21,15 @@ leftBtn.addEventListener('click',function(){
     }
     carousel.src = imgLink[imageState]
 })
+document.querySelector('#profile').addEventListener('click',goToLogin)
+let flags = JSON.parse(localStorage.getItem('flag'))
+function goToLogin(){
+    if(flags){
+        window.location.href = 'account.html'
+    }else{
+        window.location.href = 'login.html'
+    }
+    }
+
+
+   
