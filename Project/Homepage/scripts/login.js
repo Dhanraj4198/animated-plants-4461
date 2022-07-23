@@ -19,7 +19,6 @@ function compareData(){
                console.log(logged)
                localStorage.setItem('loggedPerson',JSON.stringify(logged))
                window.location.href = 'index.html'
-           
         }
            })
         }
