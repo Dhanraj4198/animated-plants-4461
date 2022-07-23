@@ -31,5 +31,8 @@ function goToLogin(){
     }
     }
 
-
+document.querySelector('#download').addEventListener('click',playstore)
+function playstore(){
+    window.location.href = ' https://play.google.com/store/apps/details?id=com.dotandkey'
+}
    

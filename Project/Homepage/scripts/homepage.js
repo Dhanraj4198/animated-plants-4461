@@ -353,5 +353,6 @@ let cartArr =JSON.parse(localStorage.getItem('cartEle'))|| []
 function addToCart(el){
     cartArr.push(el)
     localStorage.setItem('cartEle',JSON.stringify(cartArr))
+    location.reload()
     
 }

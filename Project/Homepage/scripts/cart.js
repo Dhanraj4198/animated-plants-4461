@@ -45,7 +45,7 @@ function removeCart(index){
     cartContent.splice(index,1)
     localStorage.setItem('cartEle',JSON.stringify(cartContent))
     displayCart(cartContent)
-    console.log(cartContent)
+
 }
 let quantity = cartContent.length
 
@@ -61,6 +61,7 @@ closeCartButton.addEventListener('click',closeCartPage)
 function closeCartPage(){
     document.querySelector('#cart').removeAttribute('class','active')
 document.querySelector('#overlay').removeAttribute('class','active')
+location.reload()
 }
 let cartTotal = 0
 cartContent.forEach(function(el){

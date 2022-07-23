@@ -18,3 +18,7 @@
 #details>div>h2{
     text-align: left;
 }
+.memberName{
+    font-size: 12px;
+    font-weight: 600;
+}

@@ -12,13 +12,14 @@ function compareData(){
         if(el.email==mail && el.password == pass){
             falg = true
             localStorage.setItem('flag',true)
-            window.location.href = 'index.html'
             let logged = {
-            firstName: el.firstname,
-            surname:el.lastname
-           }
-           logArrr.push(logged)
-           localStorage.setItem('loggedPerson',JSON.stringify(logged))
+                firstName: el.firstname,
+                surname:el.lastname
+               }
+               console.log(logged)
+               localStorage.setItem('loggedPerson',JSON.stringify(logged))
+               window.location.href = 'index.html'
+           
         }
            })
         }
