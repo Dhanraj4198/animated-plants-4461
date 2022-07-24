@@ -1,0 +1,28 @@
+#singleProduct{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 250px;
+    gap: 50px;
+}
+#proPrice{
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    justify-content: center;
+  
+
+}
+#prodName{
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+    height: 150px;
+   
+}
+#proPrice+button{
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    margin-left: 15%;
+}

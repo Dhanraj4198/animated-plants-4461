@@ -40,14 +40,15 @@ function displayCart(cartContent){
         document.querySelector('#cartPage').append(inCart)
     })
 }
-
+let quantity = cartContent.length
 function removeCart(index){
     cartContent.splice(index,1)
     localStorage.setItem('cartEle',JSON.stringify(cartContent))
     displayCart(cartContent)
-
+    cartTotal = 0
+    quantity = 0
 }
-let quantity = cartContent.length
+
 
 document.querySelector('#quantity').innerText = '('+quantity+')'
 let openCartButton = document.querySelector('#cartIcon')
