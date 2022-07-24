@@ -262,6 +262,9 @@ function displayProducts(productArr){
         oneProduct.setAttribute('class','product')
         let data = document.createElement('div')
         data.setAttribute('class','data')
+        data.addEventListener('click',function(){
+            showProduct(el)
+        })
         let image = document.createElement('img')
         image.setAttribute('src',el.image)
         let stars = document.createElement('img')
@@ -289,7 +292,7 @@ function displayProducts(productArr){
 }
 
 document.querySelector('#filter').addEventListener('change',handleFilter)
-document.querySelector('#sort').addEventListener('change',handleSort)
+
 function handleFilter(){
     let selected = document.querySelector('#filter').value;
     let filterArr = productArr.filter(function(el){
@@ -301,6 +304,7 @@ function handleFilter(){
         displayProducts(filterArr)
     }
 }
+document.querySelector('#sort').addEventListener('change',handleSort)
 function handleSort(){
     let selected = document.querySelector('#sort').value
     console.log(selected);
@@ -353,5 +357,11 @@ let cartArr =JSON.parse(localStorage.getItem('cartEle'))|| []
 function addToCart(el){
     cartArr.push(el)
     localStorage.setItem('cartEle',JSON.stringify(cartArr))
-    
+    location.reload()
+}
+let proDescription ;
+function showProduct(el){
+proDescription = el
+localStorage.setItem('descriptionOfOneProduct',JSON.stringify(proDescription))
+window.location.href = 'description.html'
 }

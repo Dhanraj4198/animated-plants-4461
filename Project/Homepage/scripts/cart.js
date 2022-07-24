@@ -40,14 +40,15 @@ function displayCart(cartContent){
         document.querySelector('#cartPage').append(inCart)
     })
 }
-
+let quantity = cartContent.length
 function removeCart(index){
     cartContent.splice(index,1)
     localStorage.setItem('cartEle',JSON.stringify(cartContent))
     displayCart(cartContent)
-    console.log(cartContent)
+    cartTotal = 0
+    quantity = 0
 }
-let quantity = cartContent.length
+
 
 document.querySelector('#quantity').innerText = '('+quantity+')'
 let openCartButton = document.querySelector('#cartIcon')
@@ -61,6 +62,7 @@ closeCartButton.addEventListener('click',closeCartPage)
 function closeCartPage(){
     document.querySelector('#cart').removeAttribute('class','active')
 document.querySelector('#overlay').removeAttribute('class','active')
+location.reload()
 }
 let cartTotal = 0
 cartContent.forEach(function(el){

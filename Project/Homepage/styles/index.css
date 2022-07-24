@@ -80,6 +80,9 @@ body{
 #profile>img{
     width: 30px;
 }
+#profile:hover{
+    cursor: pointer;
+}
 #carouselDiv{
     margin-top: 154px;
     width: 100vw;
